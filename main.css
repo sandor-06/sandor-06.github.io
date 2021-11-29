@@ -1,0 +1,103 @@
+body {
+    font-family:"Helvetica";
+    width: 80%;
+    background-color: lightgray;
+    border-left: 10% white solid;
+    border-right: 10% white solid;
+    border-color: white;
+    margin: auto;
+}
+table {
+    text-align:center;
+    border-collapse: collapse;
+}
+div#all {
+    background-color: lightgray;
+}
+header {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+    background-color: lightseagreen;
+    padding: 10px;
+    font-size: 20px;
+    width: 400px;
+    border: 20px solid rgba(200, 175, 10, 1);
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+h1 {
+    text-align: center;
+}
+div.directory {
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+a.directory {
+    text-decoration: none;
+    background-color: darkcyan;
+    padding: 4px;
+    color: lightgray;
+    border-radius: 8px;
+    border: 1px solid darkgray;
+    margin: 0px;
+    
+}
+a.directory:hover {
+    color: black;
+    background-color: lightblue;
+    border-color: black;
+}
+button.drop {
+    background-color: transparent;
+    color: black;
+    border: 0px;
+    margin: 0px;
+}
+div.drop {
+    position: relative;
+    display: inline-block;
+}
+.droptext {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.droptext a {
+    color: black;
+    font-size: 12px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.droptext a:hover {background-color: #ddd;}
+.drop:hover .droptext {display: block;}
+button.drop:hover {background-color: darkorange;}
+th {
+    border: 1px solid black;
+    padding: 6px;
+    margin: 0px;
+}
+td {
+    border: 1px solid black;
+    padding: 2px;
+    margin: 0px;
+}
+p {
+    line-height: 1.5em
+}
+footer {
+    background-color: lightgray;
+    padding: 2px;
+    padding-left: 4px;
+    border-radius: 4px;
+    border: 1px solid white;
+}
