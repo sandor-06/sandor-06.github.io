@@ -30,7 +30,7 @@ header {
 h1 {
     text-align: center;
 }
-div.directory {
+nav {
     background-color: orange;
     color: white;
     text-decoration: none;
