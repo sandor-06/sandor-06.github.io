@@ -32,11 +32,10 @@ h1 {
 }
 nav {
     background-color: orange;
-    color: white;
     text-decoration: none;
     padding: 10px;
-    border-radius: 6px;
     border: 1px solid gray;
+    border-radius: 6px;
 }
 a.directory {
     text-decoration: none;
