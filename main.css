@@ -113,6 +113,7 @@ img#profile {
     padding: 1%;
     border-bottom: 1px solid black;
     margin-bottom: 0px;
+    filter: invert(94%);
 }
 h2 {
     border-bottom: 2px solid black;
