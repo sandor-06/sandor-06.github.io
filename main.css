@@ -1,6 +1,5 @@
 body {
     font-family:"Helvetica";
-    width: 80%;
     background-color: lightgray;
     border-left: 10% white solid;
     border-right: 10% white solid;
@@ -13,6 +12,8 @@ table {
 }
 div#all {
     background-color: lightgray;
+    width: 80%;
+    margin: auto;
 }
 header {
     margin: auto;
@@ -23,7 +24,7 @@ header {
     padding: 10px;
     font-size: 20px;
     width: 400px;
-    border: 20px solid rgba(200, 175, 10, 1);
+    border: 20px solid orange;
     border-radius: 40px;
     margin-bottom: 30px;
 }
@@ -32,27 +33,32 @@ h1 {
 }
 nav {
     background-color: orange;
+    color: white;
     text-decoration: none;
     padding: 10px;
-    border: 1px solid gray;
     border-radius: 6px;
+    border: 1px solid gray;
 }
 a.directory {
     text-decoration: none;
-    background-color: darkcyan;
+    background-color: lightseagreen;
     padding: 4px;
-    color: lightgray;
+    font-size: 13px;
+    color: black;
     border-radius: 8px;
     border: 1px solid darkgray;
     margin: 0px;
+    float: right;
+    margin-left: 4px;
 }
 a.directory:hover {
     color: black;
     background-color: lightblue;
-    border-color: black;
+    border-color: orange;
 }
 button.drop {
     background-color: transparent;
+    padding: 4px;
     color: black;
     border: 0px;
     margin: 0px;
@@ -76,9 +82,58 @@ div.drop {
     text-decoration: none;
     display: block;
 }
-.droptext a:hover {background-color: #ddd;}
-.drop:hover .droptext {display: block;}
-button.drop:hover {background-color: darkorange;}
+.droptext a:hover {background-color: #ddd;
+}
+.drop:hover .droptext {display: block;
+}
+button.drop:hover {background-color: darkorange;
+}
+div#main {
+    padding: 1.5em;
+    margin-top: 1%;
+    background-color: white;
+}
+div#profile{
+    width: 300px;
+    float: right;
+    padding: 3px;
+    background-color: orange;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+}
+div#name {
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: lightseagreen;
+}
+img#profile {
+    width: 98%;
+    margin-top: 3px;
+    padding: 1%;
+    border-bottom: 1px solid black;
+    margin-bottom: 0px;
+}
+h2 {
+    border-bottom: 2px solid black;
+    border-bottom-right-radius: 3px;
+    width: 100%-300px;
+}
+h3 {
+    border-bottom: 2px solid black;
+    width: 100%-300px;
+    padding-bottom: 1px;
+}
+p {
+    line-height: 1.5em;
+    padding: 0.5em;
+}
+p.pinput {
+    border-bottom: 1px solid black;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 th {
     border: 1px solid black;
     padding: 6px;
@@ -89,13 +144,35 @@ td {
     padding: 2px;
     margin: 0px;
 }
-p {
-    line-height: 1.5em
-}
 footer {
-    background-color: lightgray;
-    padding: 2px;
-    padding-left: 4px;
-    border-radius: 4px;
-    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    width: 100%;
+    margin-top: 50px;
+}
+.arrow {
+    border: solid black;
+    border-width: 0px 3px 3px 0px;
+    padding: 3px;
+    display: inline-block;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.arrow:hover {
+    border-color: transparent;
 }
