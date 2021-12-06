@@ -5,7 +5,6 @@ body {
     border-right: 10% white solid;
     border-color: white;
     margin: auto;
-    filter: invert(100%);
 }
 table {
     text-align:center;
