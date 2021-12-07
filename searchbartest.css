@@ -1,0 +1,284 @@
+
+              .salamander {
+              width: calc(20% + 56px);
+              float: right;
+              transform: translate(calc(45% - 53px), 3px);
+              max-height: 380px;
+              margin-right: calc(-10% -20px);
+              line-height: 1.4;
+              overflow-y: auto;
+              margin-top: 4px;
+              background: lighgray;
+              box-shado: 0px 4px 6px 0px orange;
+              border-radius: 6px;
+              text-align: left;
+              padding-left:  5px;
+              padding-right: 5px;
+              border:
+              }
+
+            .salamander::-webkit-scrollbar {
+              width: 0px;
+              color: transparent;
+            }
+
+              /*Fix styling glitches in Firefox*/
+              @-moz-document url-prefix() {
+              .salamander {
+              height: 420px;
+              }
+              }
+
+
+             li {
+               padding-bottom: 16px;
+               padding-top: 16px;
+             }
+
+              #myInput {
+              float: right;
+              width: 100px;
+              border-radius: 5px;
+              margin-right: 10px;
+
+              }
+              #myUL {
+              list-style-type: none;
+              background: inherit;
+              padding: 0px 2px 0px 3px;
+              margin: 0;
+              display: none;
+              font-size: 23px;
+              float: center;
+              margin-left: 0px;
+              text-align: center;
+
+              }
+
+
+              invisible {
+              color: transparent;
+              }
+
+              /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+              @media (max-width: 680px) {
+              nav{
+
+              }
+
+
+              #myUL {
+                text-align: center;
+                font-stretch: extra-expanded;
+                margin-left: 0%;
+
+              }
+              }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family:"Helvetica";
+    background-color: lightgray;
+    border-left: 10% white solid;
+    border-right: 10% white solid;
+    border-color: white;
+    margin: auto;
+}
+table {
+    text-align:center;
+    border-collapse: collapse;
+}
+div#all {
+    background-color: lightgray;
+    width: 80%;
+    margin: auto;
+}
+header {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+    background-color: lightseagreen;
+    padding: 10px;
+    font-size: 20px;
+    width: 400px;
+    border: 20px solid orange;
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+h1 {
+    text-align: center;
+}
+nav {
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+a.directory {
+    text-decoration: none;
+    background-color: lightseagreen;
+    padding: 4px;
+    font-size: 13px;
+    color: black;
+    border-radius: 8px;
+    border: 1px solid darkgray;
+    margin: 0px;
+    float: right;
+    margin-left: 4px;
+}
+a.directory:hover {
+    color: black;
+    background-color: lightblue;
+    border-color: orange;
+}
+button.drop {
+    background-color: transparent;
+    padding: 4px;
+    color: black;
+    border: 0px;
+    margin: 0px;
+}
+div.drop {
+    position: relative;
+    display: inline-block;
+}
+.droptext {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.droptext a {
+    color: black;
+    font-size: 12px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.droptext a:hover {background-color: #ddd;
+}
+.drop:hover .droptext {display: block;
+}
+button.drop:hover {background-color: darkorange;
+}
+div#main {
+    padding: 1.5em;
+    margin-top: 1%;
+    background-color: white;
+}
+div#profile{
+    width: 300px;
+    float: right;
+    padding: 6px;
+    box-shadow: -2px 5px 9px 0px rgba(30,30,30,0.37);
+    border: 1px solid rgba(30,30,30,0.05);
+    border-radius: 4px;
+    background: orange;
+}
+div#name {
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: lightseagreen;
+}
+img#profile {
+    width: 98%;
+    margin-top: 3px;
+    padding: 1%;
+    border-bottom: 1px solid black;
+    margin-bottom: 0px;
+    filter: invert(94%);
+}
+h2 {
+    border-bottom: 2px solid black;
+    border-bottom-right-radius: 3px;
+    width: 100%-300px;
+}
+h3 {
+    border-bottom: 2px solid black;
+    width: 100%-300px;
+    padding-bottom: 1px;
+}
+p {
+    line-height: 1.5em;
+    padding: 0.5em;
+}
+p.pinput {
+    border-bottom: 1px solid black;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+th {
+    border: 1px solid black;
+    padding: 6px;
+    margin: 0px;
+}
+td {
+    border: 1px solid black;
+    padding: 2px;
+    margin: 0px;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 4px;
+    width: 100%;
+    margin-top: 50px;
+}
+.arrow {
+    border: solid black;
+    border-width: 0px 3px 3px 0px;
+    padding: 3px;
+    display: inline-block;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.arrow:hover {
+    border-color: transparent;
+}
+
+
+
+
+
+
