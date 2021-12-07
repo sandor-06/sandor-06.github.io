@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Test - Summerfield Wiki</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="searchbartest.css">
         <script src="scripts.js"></script>
     </head>
     <body>
@@ -27,7 +27,125 @@
                 </div>
                 <a class="directory" href="contact.html">Contact Us</a>
                 <a class="directory" href="support.html">Support</a>
+                
+                <input style="position: sticky; top: 0;"  oninput="setTimeout(myFunction, 0); setTimeout(yourFunction, 0); sortListDir();" class="vector-search-box-input" type="search" name="search"
+    placeholder="Search" aria-label="Search" autocapitalize="sentences" title="Search  [ctrl-option-f]" accesskey="f" id="myInput" autocomplete="off" >
+               
             </nav>
+            
+            
+            <br>
+    <div class="salamander">
+
+    <!--Links to pages-->
+    <ul id="myUL">
+
+      <li><a target="_blank"href="/Users/theo/Documents/Coding Elective/Sandor-06/sandor-06.html">Angelina Rubio</a></li>
+      <li><a >Ben Sarner</a></li>
+      <li><a >Cruz Leras</a></li>
+      <li><a>Dakota Freeman</a></li>
+      <li><a>Farranika Barnum</a></li>
+      <li><a >Fredi Mrazik</a></li>
+      <li><a >Haotian Kong</a></li>
+      <li><a>Melisa<!--I don't think that is the corrent spelling--> Ramirez</a></li>
+      <li><a >Oliver Smuck</a></li>
+      <li><a >Quince Wu</a></li>
+      <li><a >Theo Mackinnon</a></li>
+      <li><a >Vivianne Dean</a></li>
+      <li><a >Zoey Sugino</a></li>
+      <li><a >Zhumabek Leuzinger</a></li>
+      <li><a ></a> </li>
+
+
+
+
+
+    </ul>
+    </div>
+
+    <script>
+    function openArticle(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+
+
+    <script>
+    // Hide the list ("myUL") element until something is inputted:
+    function yourFunction() {
+      var x = document.getElementById("myUL");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+
+
+    // Hide the list ("myUL") element when input is changed:
+    function duFunction() {
+      var x = document.getElementById("myUL");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+
+
+    var x = event.key;
+
+// Hide the list ("myUL") element if delete/backspace key is pressed
+
+if (x == "delete" || x == "backspace") {
+  document.getElementById('myUL').style.display = "none";
+}
+    </script>
+
+    <script>
+    //Filter the list ("myUL") element based on what is inputted:
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        sea = document.getElementsByClassName("salamander")
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "block";
+            } else {
+                li[i].style.display = "none";
+            }
+            if (input.length < 1) {
+              sea.style.height = "100px";
+            }
+        }
+    }
+    </script>
+
+
+            
+            
+            
             <div id="main">
                 <div id="profile">
                     <div id="name">
