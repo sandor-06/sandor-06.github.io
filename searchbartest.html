@@ -1,303 +1,75 @@
-
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <html>
     <head>
         <meta charset="utf-8">
-        <title>Test - Summerfield Wiki</title>
-        <link rel="stylesheet" href="searchbartest.css">
+        <title>Home - Summerfield Wiki</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="searchbartest.css">
+        
         <script src="scripts.js"></script>
-        <style>
-
-
-
-
-              .salamander {
-              width: calc(20% + 56px);
-              float: right;
-              transform: translate(calc(45% - 53px), 3px);
-              max-height: 380px;
-              margin-right: calc(-10% -20px);
-              line-height: 1.4;
-              overflow-y: auto;
-              margin-top: 4px;
-              background: lighgray;
-              box-shadow: 0px 4px 6px 0px orange;
-              border-radius: 6px;
-              text-align: left;
-              padding-left:  5px;
-              padding-right: 5px;
-              border-bottom: -10px solid rgba(0, 0, 0, 0);
-              }
-
-            .salamander::-webkit-scrollbar {
-              width: 0px;
-              color: transparent;
-            }
-
-              /*Fix styling glitches in Firefox*/
-              @-moz-document url-prefix() {
-              .salamander {
-              height: 420px;
-              }
-              }
-
-
-             li {
-               padding-bottom: 16px;
-               padding-top: 16px;
-             }
-
-              #myInput {
-              float: right;
-              width: 100px;
-              border-radius: 5px;
-              margin-right: 10px;
-
-              }
-              #myUL {
-              list-style-type: none;
-              background: inherit;
-              padding: 0px 2px 0px 3px;
-              margin: 0;
-              display: none;
-              font-size: 23px;
-              float: center;
-              margin-left: 0px;
-              text-align: center;
-
-              }
-
-
-              invisible {
-              color: transparent;
-              }
-
-              /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-              @media (max-width: 680px) {
-              nav{
-
-              }
-
-
-              #myUL {
-                text-align: center;
-                font-stretch: extra-expanded;
-                margin-left: 0%;
-
-              }
-              }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-font-family:"Helvetica";
-background-color: lightgray;
-border-left: 10% white solid;
-border-right: 10% white solid;
-border-color: white;
-margin: auto;
-overflow-x: hidden;
-}
-table {
-text-align:center;
-border-collapse: collapse;
-}
-div#all {
-background-color: lightgray;
-width: calc(100px + 70%);
-margin: auto;
-}
-header {
-margin: auto;
-margin-top: 10px;
-text-align: center;
-color: black;
-background-color: lightseagreen;
-padding: 10px;
-font-size: 20px;
-
-border: 20px solid orange;
-border-radius: 40px;
-margin-bottom: 30px;
-}
-h1 {
-text-align: center;
-}
-nav {
-background-color: orange;
-color: white;
-text-decoration: none;
-padding: 10px;
-border-radius: 6px;
-border: 1px solid gray;
-}
-a.directory {
-text-decoration: none;
-background-color: lightseagreen;
-padding: 4px;
-font-size: 13px;
-color: black;
-border-radius: 8px;
-border: 1px solid darkgray;
-margin: 0px;
-
-margin-left: 4px;
-}
-a.directory:hover {
-color: black;
-background-color: lightblue;
-border-color: orange;
-}
-button.drop {
-background-color: transparent;
-padding: 4px;
-color: black;
-border: 0px;
-margin: 0px;
-}
-div.drop {
-position: relative;
-display: inline-block;
-}
-.droptext {
-display: none;
-position: absolute;
-background-color: #f1f1f1;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-}
-.droptext a {
-color: black;
-font-size: 12px;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-}
-.droptext a:hover {background-color: #ddd;
-}
-.drop:hover .droptext {display: block;
-}
-button.drop:hover {background-color: darkorange;
-}
-div#main {
-padding: 1.5em;
-margin-top: 1%;
-background-color: white;
-padding-top: 20px;
-}
-div#profile{
-  margin-top: 20px;
-width: 300px;
-float: right;
-padding: 6px;
-box-shadow: -2px 5px 9px 0px rgba(30,30,30,0.37);
-border: 1px solid rgba(30,30,30,0.05);
-border-radius: 4px;
-background: orange;
-}
-div#name {
-text-align: center;
-padding-top: 3px;
-padding-bottom: 3px;
-background-color: lightseagreen;
-}
-img#profile {
-width: 98%;
-margin-top: 3px;
-padding: 1%;
-border-bottom: 1px solid black;
-margin-bottom: 0px;
-filter: invert(94%);
-}
-h2 {
-border-bottom: 2px solid black;
-border-bottom-right-radius: 3px;
-width: 100%-300px;
-}
-h3 {
-border-bottom: 2px solid black;
-width: 100%-300px;
-padding-bottom: 1px;
-}
-p {
-line-height: 1.5em;
-padding: 0.5em;
-}
-p.pinput {
-border-bottom: 1px solid black;
-padding-bottom: 0px;
-margin-top: 0px;
-margin-bottom: 0px;
-}
-th {
-border: 1px solid black;
-padding: 6px;
-margin: 0px;
-}
-td {
-border: 1px solid black;
-padding: 2px;
-margin: 0px;
-}
-footer {
-background-color: black;
-color: white;
-padding: 4px;
-width: 100%;
-margin-top: 50px;
-}
-.arrow {
-border: solid black;
-border-width: 0px 3px 3px 0px;
-padding: 3px;
-display: inline-block;
-}
-.right {
-transform: rotate(-45deg);
--webkit-transform: rotate(-45deg);
-}
-.left {
-transform: rotate(135deg);
--webkit-transform: rotate(135deg);
-}
-.up {
-transform: rotate(-135deg);
--webkit-transform: rotate(-135deg);
-}
-.down {
-transform: rotate(45deg);
--webkit-transform: rotate(45deg);
-}
-.arrow:hover {
-border-color: transparent;
-}
-
-.short {
-  line-height: 0.4;
-}
-
-
-
-
-</style>
+        
+     
+        
+        
     </head>
+    <div id="salamander" onabort="closesurchmenu()">
+    <div class="">
+      <close onclick="closesurchmenu()">&times</close>
+
+      <input  oninput="setTimeout(myFunction, 0); setTimeout(yourFunction, 0); sortListDir();" class="vector-search-box-input" type="search" name="search"
+      placeholder="Search" aria-label="Search" autocapitalize="sentences" title="Search  [ctrl-option-f]" accesskey="f" id="myInput" autocomplete="off" >
+    </div>
+    <!--Links to pages-->
+    <ul id="myUL">
+      <li><a href="angelina.html">Angelina Rubio</a></li>
+      <li><a href="ben.html">Ben Sarner</a></li>
+      <li><a href="cruz.html">Cruz Leras</a></li>
+      <li><a href="dakota.html">Dakota Freeman</a></li>
+      <li><a href="farranika.html">Farranika Barnum</a></li>
+      <li><a href="fredi.html">Fredi Mrazik</a></li>
+      <li><a href="haotian.html">Haotian Kong</a></li>
+      <li><a href="melisa.html">Melisa<!--I don't think that is the corrent spelling--> Ramirez</a></li>
+      <li><a href="oliver.html">Oliver Smuck</a></li>
+      <li><a href="quince.html">Quince Wu</a></li>
+      <li><a href="theo.html">Theo Mackinnon</a></li>
+      <li><a href="vivianne.html">Vivianne Dean</a></li>
+      <li><a href="zoeys.html">Zoey Sugino</a></li>
+      <li><a href="zhumabek.html">Zhumabek Leuzinger</a></li>
+
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+      <li><a href=""></a> </li>
+
+
+    </ul>
+    </div>
     <body>
-        <div id="all">
+
+
+        <div onmousedown="closesurchmenu()" id="all">
             <header>
                 <h1>
                     Index
@@ -311,184 +83,23 @@ border-color: transparent;
                     <div class="droptext">
                         <a href="index.html">Home</a>
                         <a href="people.html">People</a>
-
-
                     </div>
                 </div>
                 <a class="directory" href="contact.html">Contact Us</a>
                 <a class="directory" href="support.html">Support</a>
-
-                <input style="position: sticky; top: 0;"  oninput="setTimeout(myFunction, 0); setTimeout(yourFunction, 0); sortListDir();" class="vector-search-box-input" type="search" name="search"
-    placeholder="Search" aria-label="Search" autocapitalize="sentences" title="Search  [ctrl-option-f]" accesskey="f" id="myInput" autocomplete="off" >
+                <button class="directory" onclick="setTimeout(opensurchmenu, 00)">Search</button>
 
             </nav>
-
-
-            <br>
-    <div style="background: rgba(20, 200, 120, 0.8);" class="salamander">
-
-    <!--Links to pages-->
-    <ul id="myUL">
-
-      <li><a target="_blank"href="/Users/theo/Documents/Coding Elective/Sandor-06/sandor-06.html">Angelina Rubio</a></li>
-      <li><a >Ben Sarner</a></li>
-      <li><a >Cruz Leras</a></li>
-      <li><a>Dakota Freeman</a></li>
-      <li><a>Farranika Barnum</a></li>
-      <li><a >Fredi Mrazik</a></li>
-      <li><a >Haotian Kong</a></li>
-      <li><a>Melisa<!--I don't think that is the corrent spelling--> Ramirez</a></li>
-      <li><a >Oliver Smuck</a></li>
-      <li><a >Quince Wu</a></li>
-      <li><a >Theo Mackinnon</a></li>
-      <li><a >Vivianne Dean</a></li>
-      <li><a >Zoey Sugino</a></li>
-      <li><a >Zhumabek Leuzinger</a></li>
-      <li><a ></a> </li>
-
-
-
-
-
-    </ul>
-    </div>
-
-    <script>
-    function openArticle(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-    </script>
-
-
-
-    <script>
-    // Hide the list ("myUL") element until something is inputted:
-    function yourFunction() {
-      var x = document.getElementById("myUL");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "block";
-      }
-    }
-
-
-
-    // Hide the list ("myUL") element when input is changed:
-    function duFunction() {
-      var x = document.getElementById("myUL");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "none";
-      }
-    }
-
-
-
-    var x = event.key;
-
-// Hide the list ("myUL") element if delete/backspace key is pressed
-
-if (x == "delete" || x == "backspace") {
-  document.getElementById('myUL').style.display = "none";
-}
-    </script>
-
-    <script>
-    //Filter the list ("myUL") element based on what is inputted:
-    function myFunction() {
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myUL");
-        sea = document.getElementsByClassName("salamander")
-        li = ul.getElementsByTagName("li");
-        for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            txtValue = a.textContent || a.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "block";
-            } else {
-                li[i].style.display = "none";
-            }
-            if (input.length < 1) {
-              sea.style.height = "100px";
-            }
-        }
-    }
-    </script>
-
-
-
-
-
             <div id="main">
-
-                <div id="profile">
-                  <br>
-                    <div id="name">
-                        Name
-                    </div>
-                    <img src="zhumabek.jpeg" alt="Zhumabek" id="profile">
-                    <p class="pinput">
-                        <strong>Date of Birth:</strong> unknown (≈18 years old)
-                    </p>
-                    <p class="pinput">
-                        <strong>Nationality:</strong> none
-                    </p>
-                    <p class="pinput">
-                        <strong>Spouse:</strong> none
-                    </p>
-                    <p class="pinput">
-                        <strong>Also known as:</strong> Sugma Big Dig
-                    </p>
-                </div>
-                <h2>
-                    Zhumabek Leuzinger
-                </h2>
                 <p>
-                    Zhumabek is an annoying little motherfucker. He is unable to walk, see with his eyes, nor listen with his elbows. Zhumabek is uninterested in watermelons bigger than five inches in diameter. Very good. Here goes more words to fill in space to see what happens. It's a very good wiki. Western walso walked a wonk. Middle small too big. No good. New vitamins are very good for your body. Very solid. Liquid waters flow.
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation illamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia derunt molllit anim id est laborum.
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <h3>
-                    Second Heading
-                </h3>
-                <p>
-                    More texts:
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Doremifasolati
                 </p>
             </div>
         </div>
-        <footer>
-            Walka Walka. This is the end of the page. I don't know what to do with the footer yet.
-        </footer>
     </body>
-    <script src="scripts.js>
-    </script>
-</html>
+      <script src=".js">
+                </script>
+
+
+
+    </html>
