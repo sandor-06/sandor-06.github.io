@@ -229,7 +229,6 @@ overflow-y: scroll;
 list-style-type: none;
 display: none;
 line-height: 2.04;
-margin-left:  calc(30% - 90px);
 }
 
 #myInput {
@@ -274,6 +273,6 @@ top: 0px;
 
 
 .icon {
-  height: 28px;
-  width: 28px;
+  height: 26px;
+  width: 38px;
 }
