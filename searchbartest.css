@@ -273,7 +273,9 @@ top: 0px;
 
 
 .icon {
-  height: 26px;
-  width: 32px;
-  filter: contrast(400%);
+  height: 23px;
+  width: 25px;
+  filter: contrast(600%);
+  filter: brightness(200%);
+  transform: translate(2px, 3px);
 }
