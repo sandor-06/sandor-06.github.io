@@ -59,13 +59,14 @@ function myFunction() {
 }
 
 //hide results if input is 0
+function fence() {
           var myInput = document.getElementById("myInput");
           var salamander = document.getElementById("salamander");
           var length = document.getElementById("length");
 
 
           // When the user starts to type something inside the password field
-          myInput.onkeyup = function() {
+          myInput.onkeydown = function() {
 
 
           // Validate length
@@ -75,4 +76,5 @@ function myFunction() {
           document.getElementById("myUL").style.display = "block";
           }
           }
+}
 
