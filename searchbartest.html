@@ -1,394 +1,394 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Home - Summerfield Wiki</title>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home - Summerfield Wiki</title>
 
-        <style>
+<style>
 
 
 
-            body {
-                font-family:"Helvetica";
-                background-color: lightgray;
-                border-left: 10% white solid;
-                border-right: 10% white solid;
-                border-color: white;
-                margin: auto;
-                height: 200vh;
-            }
+body {
+font-family:"Helvetica";
+background-color: lightgray;
+border-left: 10% white solid;
+border-right: 10% white solid;
+border-color: white;
+margin: auto;
+height: 200vh;
+}
 
-  /*style the scrollbars */
-            ::-webkit-scrollbar {
+/*style the scrollbars */
+::-webkit-scrollbar {
 width: 0px;
-        }
-            table {
-                text-align:center;
-                border-collapse: collapse;
-            }
-            div#all {
-                background-color: lightgray;
-                width: 80%;
-                margin: auto;
-            }
-            header {
-                margin: auto;
-                margin-top: 10px;
-                text-align: center;
-                color: black;
-                background-color: lightseagreen;
-                padding: 10px;
-                font-size: 20px;
-                width: 400px;
-                border: 20px solid orange;
-                border-radius: 40px;
-                margin-bottom: 30px;
-            }
-            h1 {
-                text-align: center;
-            }
-            nav {
-                background-color: orange;
-                color: white;
-                text-decoration: none;
-                padding: 10px;
-                border-radius: 6px;
-                border: 1px solid gray;
-            }
-            a.directory {
-                text-decoration: none;
-                background-color: lightseagreen;
-                padding: 4px;
-                font-size: 13px;
-                color: black;
-                border-radius: 8px;
-                border: 1px solid darkgray;
-                margin: 0px;
-                float: ;
-                margin-left: 4px;
-            }
-            a.directory:hover {
-                color: black;
-                background-color: lightblue;
-                border-color: orange;
-            }
-            button.drop {
-                background-color: transparent;
-                padding: 4px;
-                color: black;
-                border: 0px;
-                margin: 0px;
-            }
-            div.drop {
-                position: relative;
-                display: inline-block;
-            }
-            .droptext {
-                display: none;
-                position: absolute;
-                background-color: #f1f1f1;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-            .droptext a {
-                color: black;
-                font-size: 12px;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-            .droptext a:hover {background-color: #ddd;
-            }
-            .drop:hover .droptext {display: block;
-            }
-            button.drop:hover {background-color: darkorange;
-            }
-            div#main {
-                padding: 1.5em;
-                margin-top: 1%;
-                background-color: white;
-            }
-            div#profile{
-                width: 300px;
-                float: right;
-                padding: 6px;
-                box-shadow: -2px 5px 9px 0px rgba(30,30,30,0.37);
-                border: 1px solid rgba(30,30,30,0.05);
-                border-radius: 4px;
-                background: orange;
-            }
-            div#name {
-                text-align: center;
-                padding-top: 3px;
-                padding-bottom: 3px;
-                background-color: lightseagreen;
-            }
-            img#profile {
-                width: 98%;
-                margin-top: 3px;
-                padding: 1%;
-                border-bottom: 1px solid black;
-                margin-bottom: 0px;
-                filter: invert(94%);
-            }
-            h2 {
-                border-bottom: 2px solid black;
-                border-bottom-right-radius: 3px;
-                width: 100%-300px;
-            }
-            h3 {
-                border-bottom: 2px solid black;
-                width: 100%-300px;
-                padding-bottom: 1px;
-            }
-            p {
-                line-height: 1.5em;
-                padding: 0.5em;
-            }
-            p.pinput {
-                border-bottom: 1px solid black;
-                padding-bottom: 0px;
-                margin-top: 0px;
-                margin-bottom: 0px;
-            }
-            th {
-                border: 1px solid black;
-                padding: 6px;
-                margin: 0px;
-            }
-            td {
-                border: 1px solid black;
-                padding: 2px;
-                margin: 0px;
-            }
-            footer {
-                background-color: black;
-                color: white;
-                padding: 4px;
-                width: 100%;
-                margin-top: 50px;
-            }
-            .arrow {
-                border: solid black;
-                border-width: 0px 3px 3px 0px;
-                padding: 3px;
-                display: inline-block;
-            }
-            .right {
-              transform: rotate(-45deg);
-              -webkit-transform: rotate(-45deg);
-            }
-            .left {
-              transform: rotate(135deg);
-              -webkit-transform: rotate(135deg);
-            }
-            .up {
-              transform: rotate(-135deg);
-              -webkit-transform: rotate(-135deg);
-            }
-            .down {
-              transform: rotate(45deg);
-              -webkit-transform: rotate(45deg);
-            }
-            .arrow:hover {
-                border-color: transparent;
-            }
+}
+table {
+text-align:center;
+border-collapse: collapse;
+}
+div#all {
+background-color: lightgray;
+width: 80%;
+margin: auto;
+}
+header {
+margin: auto;
+margin-top: 10px;
+text-align: center;
+color: black;
+background-color: lightseagreen;
+padding: 10px;
+font-size: 20px;
+width: 400px;
+border: 20px solid orange;
+border-radius: 40px;
+margin-bottom: 30px;
+}
+h1 {
+text-align: center;
+}
+nav {
+background-color: orange;
+color: white;
+text-decoration: none;
+padding: 10px;
+border-radius: 6px;
+border: 1px solid gray;
+}
+a.directory {
+text-decoration: none;
+background-color: lightseagreen;
+padding: 4px;
+font-size: 13px;
+color: black;
+border-radius: 8px;
+border: 1px solid darkgray;
+margin: 0px;
+float: ;
+margin-left: 4px;
+}
+a.directory:hover {
+color: black;
+background-color: lightblue;
+border-color: orange;
+}
+button.drop {
+background-color: transparent;
+padding: 4px;
+color: black;
+border: 0px;
+margin: 0px;
+}
+div.drop {
+position: relative;
+display: inline-block;
+}
+.droptext {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.droptext a {
+color: black;
+font-size: 12px;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+.droptext a:hover {background-color: #ddd;
+}
+.drop:hover .droptext {display: block;
+}
+button.drop:hover {background-color: darkorange;
+}
+div#main {
+padding: 1.5em;
+margin-top: 1%;
+background-color: white;
+}
+div#profile{
+width: 300px;
+float: right;
+padding: 6px;
+box-shadow: -2px 5px 9px 0px rgba(30,30,30,0.37);
+border: 1px solid rgba(30,30,30,0.05);
+border-radius: 4px;
+background: orange;
+}
+div#name {
+text-align: center;
+padding-top: 3px;
+padding-bottom: 3px;
+background-color: lightseagreen;
+}
+img#profile {
+width: 98%;
+margin-top: 3px;
+padding: 1%;
+border-bottom: 1px solid black;
+margin-bottom: 0px;
+filter: invert(94%);
+}
+h2 {
+border-bottom: 2px solid black;
+border-bottom-right-radius: 3px;
+width: 100%-300px;
+}
+h3 {
+border-bottom: 2px solid black;
+width: 100%-300px;
+padding-bottom: 1px;
+}
+p {
+line-height: 1.5em;
+padding: 0.5em;
+}
+p.pinput {
+border-bottom: 1px solid black;
+padding-bottom: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+th {
+border: 1px solid black;
+padding: 6px;
+margin: 0px;
+}
+td {
+border: 1px solid black;
+padding: 2px;
+margin: 0px;
+}
+footer {
+background-color: black;
+color: white;
+padding: 4px;
+width: 100%;
+margin-top: 50px;
+}
+.arrow {
+border: solid black;
+border-width: 0px 3px 3px 0px;
+padding: 3px;
+display: inline-block;
+}
+.right {
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+}
+.left {
+transform: rotate(135deg);
+-webkit-transform: rotate(135deg);
+}
+.up {
+transform: rotate(-135deg);
+-webkit-transform: rotate(-135deg);
+}
+.down {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+.arrow:hover {
+border-color: transparent;
+}
 
-    </style>
+</style>
 
-    <style>
+<style>
 
-    #salamander {
-    background: white;
-    transform: translate(-50%, 0%);
-    margin: 0;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    overflow: scroll;
-    width: 60%;
-    max-height: 70vh;
-    list-style-type: none;
-    display: none;
-    border: 2px ridge green;
-    position: fixed;
-    border-radius: 10px;
-    z-index: 145553;
-    background: #cef;
-    padding: 16px;
-    padding-bottom: 4px;
-
-
-    }
-
-    #salamander::-webkit-scrollbar {
-    display: none;
-    }
-
-    #myUL::-webkit-scrollbar {
-    display: none;
-    }
-
-    @-moz-document url-prefix() {
-
-    }
+#salamander {
+background: white;
+transform: translate(-50%, 0%);
+margin: 0;
+position: absolute;
+top: 20%;
+left: 50%;
+overflow: scroll;
+width: 60%;
+max-height: 70vh;
+list-style-type: none;
+display: none;
+border: 2px ridge green;
+position: fixed;
+border-radius: 10px;
+z-index: 145553;
+background: #cef;
+padding: 16px;
+padding-bottom: 4px;
 
 
-    #myUL {
-    overflow-y: scroll;
-    list-style-type: none;
-    display: none;
-    line-height: 2.04;
-    margin-left:  calc(30% - 90px);
-    }
+}
 
-    #myInput {
-    top: 0px;
-    width: 97%;
-    margin-left: 1%;
-    height: 50px;
-    border-radius: 6px;
-    padding-left: 20px;
-    transform: translate(-0%, -40%);
+#salamander::-webkit-scrollbar {
+display: none;
+}
 
-    }
-    [type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: ;
-    appearance: none;
-    margin-left: 12px;
-    height: 10px;
-    width: 1px;
-    margin-right: -4px;
-    background-image: url();/*Custom icon*/
-    background-size: 10px 10px;
-    }
+#myUL::-webkit-scrollbar {
+display: none;
+}
 
-    close {
-    float: right;
-    margin-right: 7px;
-    margin-top: -2px;
-    cursor: pointer;
-    transform: translate(100%, -60%);
-    font-size: 24px;
-    }
-    button.directory {
+@-moz-document url-prefix() {
 
-    float: right;
-    margin-right: 10px;
-    }
-
-    .sticky {
-    position: sticky;
-    top: 0px;
-    }
-    </style>
-    </head>
-    <div id="salamander" onabort="closesurchmenu()">
-    <div class="">
-      <close onclick="closesurchmenu()">&times</close>
-
-      <input  oninput="setTimeout(myFunction, 0); setTimeout(yourFunction, 0); sortListDir();" class="vector-search-box-input" type="search" name="search"
-      placeholder="Search" aria-label="Search" autocapitalize="sentences" title="Search  [ctrl-option-f]" accesskey="f" id="myInput" autocomplete="off" >
-    </div>
-    <!--Links to pages-->
-    <ul id="myUL">
-      <li><a href="angelina.html">Angelina Rubio</a></li>
-      <li><a href="ben.html">Ben Sarner</a></li>
-      <li><a href="cruz.html">Cruz Leras</a></li>
-      <li><a href="dakota.html">Dakota Freeman</a></li>
-      <li><a href="farranika.html">Farranika Barnum</a></li>
-      <li><a href="fredi.html">Fredi Mrazik</a></li>
-      <li><a href="haotian.html">Haotian Kong</a></li>
-      <li><a href="melisa.html">Melisa<!--I don't think that is the corrent spelling--> Ramirez</a></li>
-      <li><a href="oliver.html">Oliver Smuck</a></li>
-      <li><a href="quince.html">Quince Wu</a></li>
-      <li><a href="theo.html">Theo Mackinnon</a></li>
-      <li><a href="vivianne.html">Vivianne Dean</a></li>
-      <li><a href="zoeys.html">Zoey Sugino</a></li>
-      <li><a href="zhumabek.html">Zhumabek Leuzinger</a></li>
-
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
-      <li><a href=""></a> </li>
+}
 
 
-    </ul>
-    </div>
-    <body>
+#myUL {
+overflow-y: scroll;
+list-style-type: none;
+display: none;
+line-height: 2.04;
+margin-left:  calc(30% - 90px);
+}
+
+#myInput {
+top: 0px;
+width: 97%;
+margin-left: 1%;
+height: 50px;
+border-radius: 6px;
+padding-left: 20px;
+transform: translate(-0%, -40%);
+
+}
+[type="search"]::-webkit-search-cancel-button {
+-webkit-appearance: ;
+appearance: none;
+margin-left: 12px;
+height: 10px;
+width: 1px;
+margin-right: -4px;
+background-image: url();/*Custom icon*/
+background-size: 10px 10px;
+}
+
+close {
+float: right;
+margin-right: 7px;
+margin-top: -2px;
+cursor: pointer;
+transform: translate(100%, -60%);
+font-size: 24px;
+}
+button.directory {
+
+float: right;
+margin-right: 10px;
+}
+
+.sticky {
+position: sticky;
+top: 0px;
+}
+</style>
+</head>
+<div id="salamander" onabort="closesurchmenu()">
+<div class="">
+<close onclick="closesurchmenu()">&times</close>
+
+<input  oninput="setTimeout(myFunction, 0); setTimeout(yourFunction, 0); sortListDir();" class="vector-search-box-input" type="search" name="search"
+placeholder="Search" aria-label="Search" autocapitalize="sentences" title="Search  [ctrl-option-f]" accesskey="f" id="myInput" autocomplete="off" >
+</div>
+<!--Links to pages-->
+<ul id="myUL">
+<li><a href="angelina.html">Angelina Rubio</a></li>
+<li><a href="ben.html">Ben Sarner</a></li>
+<li><a href="cruz.html">Cruz Leras</a></li>
+<li><a href="dakota.html">Dakota Freeman</a></li>
+<li><a href="farranika.html">Farranika Barnum</a></li>
+<li><a href="fredi.html">Fredi Mrazik</a></li>
+<li><a href="haotian.html">Haotian Kong</a></li>
+<li><a href="melisa.html">Melisa<!--I don't think that is the corrent spelling--> Ramirez</a></li>
+<li><a href="oliver.html">Oliver Smuck</a></li>
+<li><a href="quince.html">Quince Wu</a></li>
+<li><a href="theo.html">Theo Mackinnon</a></li>
+<li><a href="vivianne.html">Vivianne Dean</a></li>
+<li><a href="zoeys.html">Zoey Sugino</a></li>
+<li><a href="zhumabek.html">Zhumabek Leuzinger</a></li>
+
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
 
 
-        <div onmousedown="closesurchmenu()" id="all">
-            <header>
-                <h1>
-                    Index
-                </h1>
-            </header>
-            <nav class="directory">
-                <div class="drop">
-                    <button class="drop">
-                        Explore <i class="arrow down"></i>
-                    </button>
-                    <div class="droptext">
-                        <a href="index.html">Home</a>
-                        <a href="people.html">People</a>
-                    </div>
-                </div>
-                <a class="directory" href="contact.html">Contact Us</a>
-                <a class="directory" href="support.html">Support</a>
-                <button class="directory" onclick="setTimeout(opensurchmenu, 00)">Search</button>
-
-            </nav>
-            <div id="main">
-                <p>
-                    Doremifasolati
-                </p>
-            </div>
-        </div>
-    </body>
-      <script>
-      //hide results if input is 0
-                var myInput = document.getElementById("myInput");
-                var salamander = document.getElementById("salamander");
-                var length = document.getElementById("length");
+</ul>
+</div>
+<body>
 
 
-                // When the user starts to type something inside the password field
-                myInput.onkeyup = function() {
+<div onmousedown="closesurchmenu()" id="all">
+<header>
+<h1>
+Index
+</h1>
+</header>
+<nav class="directory">
+<div class="drop">
+<button class="drop">
+  Explore <i class="arrow down"></i>
+</button>
+<div class="droptext">
+  <a href="index.html">Home</a>
+  <a href="people.html">People</a>
+</div>
+</div>
+<a class="directory" href="contact.html">Contact Us</a>
+<a class="directory" href="support.html">Support</a>
+<button class="directory" onclick="setTimeout(opensurchmenu, 00)">Search</button>
+
+</nav>
+<div id="main">
+<p>
+Doremifasolati
+</p>
+</div>
+</div>
+</body>
+<script>
+//hide results if input is 0
+var myInput = document.getElementById("myInput");
+var salamander = document.getElementById("salamander");
+var length = document.getElementById("length");
 
 
-                // Validate length
-                if(myInput.value.length <= 0) {
-                document.getElementById("myUL").style.display = "none";
-                } else {
-                document.getElementById("myUL").style.display = "block";
-                }
-                }
-                </script>
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+
+
+// Validate length
+if(myInput.value.length <= 0) {
+document.getElementById("myUL").style.display = "none";
+} else {
+document.getElementById("myUL").style.display = "block";
+}
+}
+</script>
 
 
 
-    </html>
+</html>
