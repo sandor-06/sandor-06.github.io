@@ -1,4 +1,3 @@
-
 function opensurchmenu() {
   var x = document.getElementById("salamander");
   var e = document.getElementById('all');
@@ -59,14 +58,13 @@ function myFunction() {
 }
 
 //hide results if input is 0
-function fence() {
           var myInput = document.getElementById("myInput");
           var salamander = document.getElementById("salamander");
           var length = document.getElementById("length");
 
 
           // When the user starts to type something inside the password field
-          myInput.onkeydown = function() {
+          myInput.onkeyup = function() {
 
 
           // Validate length
@@ -76,5 +74,3 @@ function fence() {
           document.getElementById("myUL").style.display = "block";
           }
           }
-}
-
