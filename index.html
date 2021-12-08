@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <title>Home - Summerfield Wiki</title>
         
-        <link rel="stylesheet" href="searchbartest.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="sripts.js"></script>
     </head>
     <body>
-        <div id="all">
+        <div id="all" onmousedown="closesurchmenu()">
             <header>
                 <h1>
                     Index
@@ -25,6 +26,7 @@
                 </div>
                 <a class="directory" href="contact.html">Contact Us</a>
                 <a class="directory" href="support.html">Support</a>
+                <r class="directory" onclick="opensurchmenu();"><img src="search.png" alt="Search" class="icon"></r>
             </nav>
             <div id="main">
                 <p>
@@ -33,8 +35,60 @@
             </div>
         </div>
     </body>
-    <script>
-        var arrowD = document.getElementsByClassName("arrow down");
-        
-    </script>
+    
+    <div id="salamander" onabort="closesurchmenu()">
+
+<close onclick="closesurchmenu()">&times</close>
+
+<input  oninput="setTimeout(myFunction, 0); setTimeout(yourFunction, 0); sortListDir();" class="vector-search-box-input" type="search" name="search"
+placeholder="Search" aria-label="Search" autocapitalize="sentences" title="Search  [ctrl-option-f]" accesskey="f" id="myInput" autocomplete="off" >
+
+<!--Links to pages-->
+<ul id="myUL">
+<li><a href="angelina.html">Angelina Rubio</a></li>
+<li><a href="ben.html">Ben Sarner</a></li>
+<li><a href="cruz.html">Cruz Leras</a></li>
+<li><a href="dakota.html">Dakota Freeman</a></li>
+<li><a href="farranika.html">Farranika Barnum</a></li>
+<li><a href="fredi.html">Fredi Mrazik</a></li>
+<li><a href="haotian.html">Haotian Kong</a></li>
+<li><a href="melisa.html">Melisa<!--I don't think that is the corrent spelling--> Ramirez</a></li>
+<li><a href="oliver.html">Oliver Smuck</a></li>
+<li><a href="quince.html">Quince Wu</a></li>
+<li><a href="theo.html">Theo Mackinnon</a></li>
+<li><a href="vivianne.html">Vivianne Dean</a></li>
+<li><a href="zoeys.html">Zoey Sugino</a></li>
+<li><a href="zhumabek.html">Zhumabek Leuzinger</a></li>
+
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+<li><a href=""></a> </li>
+
+
+</ul>
+</div>
+
 </html>
