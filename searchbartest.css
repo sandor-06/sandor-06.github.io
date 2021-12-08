@@ -274,5 +274,6 @@ top: 0px;
 
 .icon {
   height: 26px;
-  width: 38px;
+  width: 32px;
+  filter: contrast(400%);
 }
