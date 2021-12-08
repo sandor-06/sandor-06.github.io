@@ -1,42 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Home - Summerfield Wiki</title>
-        
-        <link rel="stylesheet" href="main.css">
-        <script src="sripts.js"></script>
-    </head>
-    <body>
-        <div id="all" onmousedown="closesurchmenu()">
-            <header>
-                <h1>
-                    Index
-                </h1>
-            </header>
-            <nav class="directory">
-                <div class="drop">
-                    <button class="drop">
-                        Explore <i class="arrow down"></i>
-                    </button>
-                    <div class="droptext">
-                        <a href="index.html">Home</a>
-                        <a href="people.html">People</a>
-                    </div>
-                </div>
-                <a class="directory" href="contact.html">Contact Us</a>
-                <a class="directory" href="support.html">Support</a>
-                <r class="directory" onclick="opensurchmenu();"><img src="search.png" alt="Search" class="icon"></r>
-            </nav>
-            <div id="main">
-                <p>
-                    Doremifasolati
-                </p>
-            </div>
-        </div>
-    </body>
-    
-    <div id="salamander" onabort="closesurchmenu()">
+<head>
+<meta charset="utf-8">
+<title>Home - Summerfield Wiki</title>
+<link rel="stylesheet" href="main.css">
+</head>
+  
+<div id="salamander" onabort="closesurchmenu()">
 
 <close onclick="closesurchmenu()">&times</close>
 
@@ -90,5 +60,42 @@ placeholder="Search" aria-label="Search" autocapitalize="sentences" title="Searc
 
 </ul>
 </div>
+<body>
+
+
+<div onmousedown="closesurchmenu()" id="all">
+<header>
+<h1>
+Index
+</h1>
+</header>
+<nav class="directory">
+<div class="drop">
+<button class="drop">
+  Explore <i class="arrow down"></i>
+</button>
+<div class="droptext">
+  <a href="index.html">Home</a>
+  <a href="people.html">People</a>
+</div>
+</div>
+<a class="directory" href="contact.html">Contact Us</a>
+<a class="directory" href="support.html">Support</a>
+<r class="directory" onclick="opensurchmenu();"><img src="search.png" alt="Search" class="icon"></r>
+
+
+</nav>
+<div id="main">
+<p>
+Doremifasolati
+</p>
+</div>
+</div>
+</body>
+  
+<script src="scripts.js">
+</script>
+
+
 
 </html>
