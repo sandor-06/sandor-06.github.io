@@ -64,7 +64,7 @@ function myFunction() {
 
 
           // When the user starts to type something inside the password field
-          myInput.onkeydown = function() {
+          myInput.onkeyup = function() {
 
 
           // Validate length
