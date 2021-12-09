@@ -109,6 +109,7 @@ box-shadow: -2px 5px 9px 0px rgba(30,30,30,0.37);
 border: 1px solid rgba(30,30,30,0.05);
 border-radius: 4px;
 background: orange;
+overflow: hidden;
 }
 div#name {
 text-align: center;
@@ -119,11 +120,21 @@ background-color: lightseagreen;
 img#profile {
 width: 98%;
 margin-top: 3px;
+margin-left: auto;
 padding: 1%;
 border-bottom: 1px solid black;
 margin-bottom: 0px;
-filter: invert(94%);
+filter: grayscale(0%) brightness(100%);
+transition: 1s;
+delay: 1s;
+border-radius: 0px;
 }
+
+img#profile:hover {
+filter: grayscale(00%);
+transform: rotateY(-900deg) rotateX(360deg);
+}
+
 h2 {
 border-bottom: 2px solid black;
 border-bottom-right-radius: 3px;
@@ -192,7 +203,7 @@ border-color: transparent;
 transform: translate(-50%, 0%);
 margin: 0;
 position: absolute;
-top: 27.7%;
+top: 27.3%;
 left: 50%;
 overflow: scroll;
 width: 80%;
@@ -230,14 +241,15 @@ line-height: 2.04;
 
 #myInput {
 top: 0px;
-width: 97%;
+width: 98%;
 margin-left: 1%;
 height: 50px;
 border-radius: 6px;
-padding-left: 20px;
+padding-left: 10px;
+padding-right: 10px;
 transform: translate(-0%, -40%);
-
 }
+
 [type="search"]::-webkit-search-cancel-button {
 -webkit-appearance: ;
 appearance: none;
@@ -251,12 +263,17 @@ background-size: 10px 10px;
 
 close {
 float: right;
-margin-right: 7px;
-margin-top: -2px;
+margin-right: 3px;
+margin-top: -4px;
 cursor: pointer;
-transform: translate(100%, -60%);
+transform: translate(70%, -30%);
 font-size: 24px;
+padding-bottom: 10px;
 }
+
+close:hover {opacity: 0.5;
+}
+
 r.directory {
 
 float: right;
@@ -270,9 +287,30 @@ top: 0px;
 
 
 .icon {
-  height: 23px;
-  width: 25px;
-  filter: contrast(600%);
-  filter: brightness(200%);
-  transform: translate(2px, 3px);
+  height: 20px;
+  width: 18px;
+  filter: contrast(1600%);
+  filter: brightness(600%);
+  transfor: translate(2px, 3px);
+  padding: 6px;
+  transition: 0.5s ease;
+ cursor: pointer;
+  border-radius: 15px;
+  background: inherit;
+
+
 }
+.icon:hover {
+
+  background: radial-gradient(red,white,white, white);
+  filter: invert(100%);
+
+}
+
+
+
+@media (max-width: 700px) {
+  header {
+    width: calc(89% - 100px);
+}
+
