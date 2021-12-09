@@ -2,10 +2,7 @@ function opensurchmenu() {
   var x = document.getElementById("salamander");
   var e = document.getElementById('all');
   var sc = document.querySelector("::-webkit-scrollbar");
-  e.style.opacity = "0";
-
-document.body.style.background = "rgba(120, 120, 252, 0.93)";
-
+  e.style.opacity = "0.2";
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
