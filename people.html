@@ -1,117 +1,128 @@
-<!DOCTYPE html>
-<html>
-<head>
+
+
+
+
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
   <title>People</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
   box-sizing: border-box;
-}
+  }
 
-body {
-  background-color: #fda342;
+  /*style the scrollbars */
+  ::-webkit-scrollbar {
+  width: 0px;
+  }
+  body {
+  background: lightseagreen;
+  background-colo: #fda342;
   z-index: 2;
-}
+  }
 
-/* Center website */
-.main {
+  /* Center website */
+  .main {
   max-width: 90%;
   margin: auto;
-}
+  }
 
-h1 {
+  h1 {
   font-size: 50px;
   word-break: break-all;
-}
+  }
 
-.row {
+  .row {
   margin: 10px -16px;
-}
+  }
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+  padding: 0px;
+  }
 
-/* Create three equal columns that floats next to each other */
-.column {float: left;
+
+  .column {float: left;
   margin: auto;
-  width: 180px;
-  height: 180px;
+  height: ; /*make 180 px in order for images to stay static when found in search*/
+  width: ;  /*make 180 px in order for images to stay static when found in search*/
   display: none; /* Hide all elements by default */
-}
+  }
 
-/* Clear floats after rows */
-.row:after {
-  content: "";
+  /* Clear floats after rows */
+  .row:after {
+  content: ;
   display: table;
   clear: both;
-}
+  }
 
-/* Content */
-.content {
+  /* Content */
+  .content {
   background-color: rgba(0, 0, 0, 1);
   padding: 0px;
   border-radius: 50%;
-border: 1px solid black;
-height: 180px;
-width: 180px;
-z-index: 3;
-overflow: hidden;
-}
+  border: 1px solid black;
+  height: 170px;
+  width: 170px;
+  z-index: 3;
+  overflow: hidden;
+  }
 
-/* The "show" class is added to the filtered elements */
-.show {
+  /* The "show" class is added to the filtered elements */
+  .show {
   display: block;
-}
+  }
 
-/* Style the buttons */
-.btn {
+  /* Style the buttons */
+  .btn {
   border: none;
   border-radius: 4%;
   outline: none;
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
-}
+  }
 
-.btn:hover {
+  .btn:hover {
   background-color: #ddd;
-}
+  }
 
-.btn.active {
+  .btn.active {
   background-color: #666;
   color: white;
-}
+  }
 
-y {
+  y {
   display: none;
-}
+  }
 
 
 
-img {
+  img {
   border-radius: 50%;
   padding: 1px;
-height: 100%;
-width: 100%;
-cursor: pointer;
-z-index: 3;
-transition: 15.9s ease;
-margin: auto;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  z-index: 3;
+  transition: 2.9s ease;
+  margin: auto;
 
-}
+  }
 
-img:hover {
-  transform: rotate(-0deg) scale(2.5) translate(-3%, 16%);
-  filter: brightness(150%);
-}
-#cruzhover {
+  img:hover {
+  transform: rotate(-0deg) scale(1.5) translate(3%, 6%) ;
+  filter: brightness(150%)  hue-rotate(70deg);
+  }
+  #cruzhover {
   display:none;
-}
+  }
 
-h4 {
+  h4 {
   transform: translate(-50%, -50%);
   margin-top: 50%;
   margin-left: 50%;
@@ -119,279 +130,290 @@ h4 {
 
   text-decoration: none;
 
-}
+  }
 
 
-#myInput {background: transparent;
+  #myInput {background: transparent;
 
-top: 10px;
-max-width: 38%;
-min-width: 18%;
-margin-left: 1%;
-float: right;
-height: 50px;
-padding-left: 5%;
-padding-right: 10px;
-transform: translate(-0%, -0%);
-border-color: transparent;
-        border-bottom: 1px solid gray;
-        outline: none;
+  top: 10px;
+  max-width: 28%;
+  min-width: 18%;
+  margin-left: 1%;
+  float: right;
+  height: 50px;
+  padding-left: 5%;
+  padding-right: 10px;
+  transform: translate(-0%, -0%);
+  border-color: transparent;
+  border-bottom: 1px solid gray;
+  outline: none;
 
-}
-</style>
-</head>
-<body>
-
-<!-- MAIN (Center website) -->
-<div class="main">
+  }
 
 
+  @media (max-width: 1100px) {
+  .btn {opacity: 0;
+  width:0px;
+  height: 49px;}
 
-<br>
-<div id="myBtnContainer">
+  #myInput {
+  min-width: 50%;
+  }
+  }
+  </style>
+  </head>
+  <body>
+
+  <!-- MAIN (Center website) -->
+  <div class="main">
+
+
+
+  <br>
+  <div id="myBtnContainer">
+
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
   <button class="btn" onclick="filterSelection('12th Grade')"> 12th Grade</button>
   <button class="btn" onclick="filterSelection('11th Grade')"> 11th Grade</button>
   <button class="btn" onclick="filterSelection('10th Grade')"> 10th Grade</button>
   <button class="btn" onclick="filterSelection('10th Grade')"> 9th Grade</button>
-
   <input  oninput="setTimeout(myFunction, 0); setTimeout(yourFunction, 0); sortListDir();" class="vector-search-box-input" type="search" name="search"
   placeholder="Search" aria-label="Search" autocapitalize="sentences" title="Search  [ctrl-option-f]" accesskey="f" id="myInput" autocomplete="off" >
 
-</div>
-<hr>
-<!-- Portfolio Gallery Grid -->
-<div class="row">
+
+  </div>
+  <hr>
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
   <div class="column 12th Grade">
-    <div class="content">
-      <img src="angelina.jpg" alt="Angelina"title="Angelina" style="width:100%">
-      <h4>Angelina</h4>
-    </div>
+  <div class="content">
+  <img src="angelina.jpg" alt="Angelina"title="Angelina" style="width:100%">
+  <h4>Angelina</h4>
+  </div>
   </div>
 
   <div class="column 12th Grade">
-    <div class="content">
-      <img src="ben.jpg" alt="Ben" title="Ben" style="width:100%">
-      <h4>Ben</h4>
-    </div>
+  <div class="content">
+  <img src="ben.jpg" alt="Ben" title="Ben" style="width:100%">
+  <h4>Ben</h4>
+  </div>
   </div>
 
 
 
   <div id="cruz" class="column 12th Grade">
-    <div  onmouseove="showname()" class="content">
-    <a href="cruz.html"><img src="cruz.jpg"  alt="Cruz" title="Cruz"style="width:100%"></img></a>
-    <h4>Cruz</h4>
+  <div  onmouseove="showname()" class="content">
+  <a href="cruz.html"><img src="cruz.jpg"  alt="Cruz" title="Cruz"style="width:100%"></img></a>
+  <h4>Cruz</h4>
 
-    </div>
+  </div>
   </div>
 
 
-    <div id="cruzhover" class="column 12th Grade">
-      <div  onmouseout="setTimeout(hidename, 800)" class="content">
-      <a href="cruz.html"><h4>Cruz</h4></a>
+  <div id="cruzhover" class="column 12th Grade">
+  <div  onmouseout="setTimeout(hidename, 800)" class="content">
+  <a href="cruz.html"><h4>Cruz</h4></a>
 
 
-      </div>
-    </div>
+  </div>
+  </div>
 
 
 
 
   <div class="column 12th Grade">
-    <div class="content">
-      <img src="dakota.jpg" alt="Dakota" title="Dakota" style="width:100%">
-      <h4>Dakota</h4>
-    </div>
+  <div class="content">
+  <img src="dakota.jpg" alt="Dakota" title="Dakota" style="width:100%">
+  <h4>Dakota</h4>
+  </div>
   </div>
 
 
-      <div class="column 12th Grade">
-        <div class="content">
-          <img src="farranika.jpg" alt="Farranika" style="width:100%">
-          <h4>Farranika</h4>
-        </div>
-      </div>
+  <div class="column 12th Grade">
+  <div class="content">
+  <img src="farranika.jpg" alt="Farranika" style="width:100%">
+  <h4>Farranika</h4>
+  </div>
+  </div>
 
 
 
-          <div class="column 12th Grade">
-            <div class="content">
-              <img src="fredi.jpg" alt="Fredi" title="Fredi"style="width:100%">
-              <h4>Fredi</h4>
-            </div>
-          </div>
+  <div class="column 12th Grade">
+  <div class="content">
+  <img src="fredi.jpg" alt="Fredi" title="Fredi"style="width:100%">
+  <h4>Fredi</h4>
+  </div>
+  </div>
 
 
-        <div class="column 12th Grade">
-          <div class="content">
-          <a href="haotian.html"> <img src="haotian.jpg" title="Haotian"alt="Haotian" style="width:100%"></a>
-            <h4>Haotian</h4>
-          </div>
-        </div>
+  <div class="column 12th Grade">
+  <div class="content">
+  <a href="haotian.html"> <img src="haotian.jpg" title="Haotian"alt="Haotian" style="width:100%"></a>
+  <h4>Haotian</h4>
+  </div>
+  </div>
 
 
-          <div class="column 12th Grade">
-            <div class="content">
-              <img src="melisa.jpg" alt="Melisa" title="Melisa" style="width:100%">
-              <h4>Melisa </h4>
-            </div>
-          </div>
+  <div class="column 12th Grade">
+  <div class="content">
+  <img src="melisa.jpg" alt="Melisa" title="Melisa" style="width:100%">
+  <h4>Melisa </h4>
+  </div>
+  </div>
 
 
-            <div class="column 12th Grade">
-              <div class="content">
-                <img src="oliver.jpg" alt="Olvier" title="Oliver" style="width:100%">
-                <h4>Oliver </h4>
-              </div>
-            </div>
+  <div class="column 12th Grade">
+  <div class="content">
+  <img src="oliver.jpg" alt="Olvier" title="Oliver" style="width:100%">
+  <h4>Oliver </h4>
+  </div>
+  </div>
 
 
-              <div class="column 12th Grade">
-                <div class="content">
-                  <img src="quince.jpg" alt="Quince" title="Quince" style="width:100%">
-                  <h4>Quince </h4>
-                </div>
-              </div>
+  <div class="column 12th Grade">
+  <div class="content">
+  <img src="quince.jpg" alt="Quince" title="Quince" style="width:100%">
+  <h4>Quince </h4>
+  </div>
+  </div>
 
 
-                <div class="column 12th Grade">
-                  <div class="content">
-                    <img src="theo.jpg" alt="Theo" title="Theo"style="width:100%">
-                    <h4>Theo </h4>
-                  </div>
-                </div>
+  <div class="column 12th Grade">
+  <div class="content">
+  <img src="theo.jpg" alt="Theo" title="Theo"style="width:100%">
+  <h4>Theo </h4>
+  </div>
+  </div>
 
 
-                  <div class="column 12th Grade">
-                    <div class="content">
-                      <img src="vivianne.jpg" alt="Vivianne" title="Theo"style="width:100%">
-                      <h4>Vivianne </h4>
-                    </div>
-                  </div>
-
-
-
-
-    <div class="column 12th Grade">
-      <div class="content">
-    <a href="zhumabek.html">  <img src="zhumabek.jpeg" alt="Zhumabek" title="Zhumabek"
-      style="width:100%"></a>
-        <h4>Zhumabek</h4>
-      </div>
-    </div>
-
-
-                          <div class="column 12th Grade">
-                            <div class="content">
-                      <a href="zoeys.html"><img src="zoey.jpg" alt="Zoey" title="Zoey"style="width:100%"></a>
-                              <h4>Zoey </h4>
-                            </div>
-                          </div>
+  <div class="column 12th Grade">
+  <div class="content">
+  <img src="vivianne.jpg" alt="Vivianne" title="Theo"style="width:100%">
+  <h4>Vivianne </h4>
+  </div>
+  </div>
 
 
 
 
-<!-- END GRID -->
-</div>
+  <div class="column 12th Grade">
+  <div class="content">
+  <a href="zhumabek.html">  <img src="zhumabek.jpeg" alt="Zhumabek" title="Zhumabek"
+  style="width:100%"></a>
+  <h4>Zhumabek</h4>
+  </div>
+  </div>
 
-<!-- END MAIN -->
-</div>
 
-<script>
-function showname() {
+  <div class="column 12th Grade">
+  <div class="content">
+  <a href="zoeys.html"><img src="zoey.jpg" alt="Zoey" title="Zoey"style="width:100%"></a>
+  <h4>Zoey </h4>
+  </div>
+  </div>
+
+
+
+
+  <!-- END GRID -->
+  </div>
+
+  <!-- END MAIN -->
+  </div>
+
+  <script>
+  function showname() {
   var f = document.getElementById("cruz");
   var fa = document.getElementById("cruzhover");
 
   f.style.display = "none";
   fa.style.display = "block";
-}
+  }
 
 
-function hidename() {
+  function hidename() {
   var f = document.getElementById("cruz");
   var fa = document.getElementById("cruzhover");
   f.style.display = "block";
   fa.style.display = "none";
-}
+  }
 
 
 
-//Filter the list ("myUL") element based on what is inputted:
-function myFunction() {
-    var input, filter, row, content, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
+  //Filter the list ("myUL") element based on what is inputted:
+  function myFunction() {
+  var input, filter, row, content, a, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
   row = document.getElementById("row");
-    content = document.getElementsByClassName("content");
-    for (i = 0; i < content.length; i++) {
-        a = content[i].getElementsByTagName("h4")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            content[i].style.display = "block";
-        } else {
-            content[i].style.display = "none";
-        }
+  content = document.getElementsByClassName("content");
+  for (i = 0; i < content.length; i++) {
+  a = content[i].getElementsByTagName("h4")[0];
+  txtValue = a.textContent || a.innerText;
+  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+  content[i].style.display = "block";
+  } else {
+  content[i].style.display = "none";
+  }
 
-    }
-}
-
-
-
-
-</script>
+  }
+  }
 
 
 
 
+  </script>
 
 
-<script>
-filterSelection("all")
-function filterSelection(c) {
+
+
+
+
+  <script>
+  filterSelection("all")
+  function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  w3RemoveClass(x[i], "show");
+  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
-}
+  }
 
-function w3AddClass(element, name) {
+  function w3AddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
   }
-}
+  }
 
-function w3RemoveClass(element, name) {
+  function w3RemoveClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
+  while (arr1.indexOf(arr2[i]) > -1) {
+  arr1.splice(arr1.indexOf(arr2[i]), 1);
+  }
   }
   element.className = arr1.join(" ");
-}
+  }
 
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
   });
-}
-</script>
+  }
+  </script>
 
-</body>
-</html>
-
+  </body>
+  </html>
