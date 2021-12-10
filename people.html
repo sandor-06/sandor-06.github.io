@@ -66,8 +66,8 @@
   padding: 0px;
   border-radius: 50%;
   border: 1px solid black;
-  height: 170px;
-  width: 170px;
+  height: 180px;
+  width: 180px;
   z-index: 3;
   overflow: hidden;
   }
@@ -139,7 +139,7 @@
   max-width: 28%;
   min-width: 18%;
   margin-left: 1%;
-  float: right;
+  float: left;
   height: 50px;
   padding-left: 5%;
   padding-right: 10px;
@@ -171,7 +171,7 @@
 
   <br>
   <div id="myBtnContainer">
-
+<a class="directory" onclick="randomPage()">Random Page</a>
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
   <button class="btn" onclick="filterSelection('12th Grade')"> 12th Grade</button>
   <button class="btn" onclick="filterSelection('11th Grade')"> 11th Grade</button>
@@ -312,11 +312,23 @@
   </div>
   </div>
 
-
+  <div class="column 11th Grade">
+  <div class="content">
+  <a href="baz.html">  <img src="kai-seidler.jpg" alt="Baz" title="Baz"
+  style="width:100%"></a>
+  <h4>Baz</h4>
+  </div>
+  </div>
 
 
   <!-- END GRID -->
   </div>
+
+
+
+
+
+
 
   <!-- END MAIN -->
   </div>
@@ -413,6 +425,14 @@
   this.className += " active";
   });
   }
+  </script>
+
+  <script>
+  let x = Math.floor((Math.random() * 10) + 1);
+  if (x === 7) {
+  window.location.assign("zhumabek.html")
+  }
+
   </script>
 
   </body>
